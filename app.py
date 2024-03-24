@@ -17,10 +17,10 @@ if hist_button: # al hacer clic en el botón
 
 
 # crear una casilla de verificación
-build_dispersion = st.checkbox('Construir un histograma')
+build_dispersion = st.checkbox('Construir un diagrama de dispercion')
 
 if build_dispersion: # si la casilla de verificación está seleccionada
-    st.write('Construir un histograma para la columna odómetro')
+    st.write('Construir un digrama de dispercion para la columna odómetro')
 
      # crear un diagrama de dispersion 
     fig = px.scatter(car_data, x="odometer", y= "price")
